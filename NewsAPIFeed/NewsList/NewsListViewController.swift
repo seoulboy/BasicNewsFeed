@@ -134,7 +134,7 @@ final class NewsListViewController: UIViewController {
             cell.configure(with: itemIdentifier, cellIndex: indexPath.item)
             cell.tapEvent
                 .bind(to: self.viewModel.didTapItem)
-                .disposed(by: disposeBag)
+                .disposed(by: cell.disposeBag)
             return cell
         }
         

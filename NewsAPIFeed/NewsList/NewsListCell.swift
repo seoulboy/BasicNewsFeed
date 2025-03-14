@@ -19,6 +19,13 @@ final class NewsListCell: UICollectionViewCell {
         button.rx.tap.compactMap { [weak self] _ in self?.index }
     }
     
+    var disposeBag = DisposeBag()
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
+    }
+    
     private var index: Int?
     private var article: Article?
     
