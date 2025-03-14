@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		71A5ECD32D6DF0CA00D875AD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 71A5ECD22D6DF0CA00D875AD /* RxCocoa */; };
+		71A5ECD52D6DF0CA00D875AD /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 71A5ECD42D6DF0CA00D875AD /* RxRelay */; };
+		71A5ECD72D6DF0CA00D875AD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71A5ECD62D6DF0CA00D875AD /* RxSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		71A5EC922D6C8C4400D875AD /* NewsAPIFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAPIFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A5ECD72D6DF0CA00D875AD /* RxSwift in Frameworks */,
+				71A5ECD52D6DF0CA00D875AD /* RxRelay in Frameworks */,
+				71A5ECD32D6DF0CA00D875AD /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,9 @@
 			);
 			name = NewsAPIFeed;
 			packageProductDependencies = (
+				71A5ECD22D6DF0CA00D875AD /* RxCocoa */,
+				71A5ECD42D6DF0CA00D875AD /* RxRelay */,
+				71A5ECD62D6DF0CA00D875AD /* RxSwift */,
 			);
 			productName = NewsAPIFeed;
 			productReference = 71A5EC922D6C8C4400D875AD /* NewsAPIFeed.app */;
@@ -107,6 +119,9 @@
 			);
 			mainGroup = 71A5EC892D6C8C4400D875AD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				71A5ECD12D6DF0CA00D875AD /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 71A5EC932D6C8C4400D875AD /* Products */;
 			projectDirPath = "";
@@ -150,7 +165,6 @@
 				INFOPLIST_FILE = NewsAPIFeed/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -178,7 +192,6 @@
 				INFOPLIST_FILE = NewsAPIFeed/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +348,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71A5ECD12D6DF0CA00D875AD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71A5ECD22D6DF0CA00D875AD /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71A5ECD12D6DF0CA00D875AD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		71A5ECD42D6DF0CA00D875AD /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71A5ECD12D6DF0CA00D875AD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		71A5ECD62D6DF0CA00D875AD /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71A5ECD12D6DF0CA00D875AD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 71A5EC8A2D6C8C4400D875AD /* Project object */;
 }
