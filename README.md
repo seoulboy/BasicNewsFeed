@@ -7,6 +7,7 @@ This app fetches and displays news articles from [NewsAPI](https://newsapi.org/s
 - **Architecture**: Built with MVVM-C (MVVM + Coordinator Pattern)  
 - **Modern UI**: Implements CollectionView Compositional Layout & Diffable DataSource  
 - **Efficient Networking**: Fetches data from a RESTful API with JSON decoding  
+- **Swift Concurrency**: Utilizes Swift’s async-await for modern concurrency handling
 - **Pagination Support**: Handles infinite scrolling with "Load More" button  
 - **User Experience**: Displays a loading indicator while fetching data  
 
